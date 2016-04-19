@@ -35,9 +35,6 @@
     },
     "queryString": {
       "type": "array",
-      "items": {
-        "$ref": "#record"
-      }
     },
     "postData": {
       "$ref": "#postData"

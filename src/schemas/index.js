@@ -27,7 +27,10 @@ schemas.page.properties.pageTimings = schemas.pageTimings
 
 schemas.request.properties.cookies.items = schemas.cookie
 schemas.request.properties.headers.items = schemas.record
-schemas.request.properties.queryString.items = schemas.record
+
+// Fix so that HAR Validator does not blow up with repeated values in the queryString. 
+// schemas.request.properties.queryString.items = schemas.record
+
 schemas.request.properties.postData = schemas.postData
 
 schemas.response.properties.cookies.items = schemas.cookie
