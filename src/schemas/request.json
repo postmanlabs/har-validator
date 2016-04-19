@@ -34,7 +34,7 @@
       }
     },
     "queryString": {
-      "type": "array",
+      "type": "array"
     },
     "postData": {
       "$ref": "#postData"
