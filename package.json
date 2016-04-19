@@ -1,12 +1,17 @@
 {
   "version": "1.6.1",
-  "name": "har-validator",
+  "name": "har-validator-fsless",
   "description": "Extremely fast HTTP Archive (HAR) validator using JSON Schema",
-  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
-  "homepage": "https://github.com/ahmadnassri/har-validator",
+  "author": {
+    "name": "Abhijit Kane",
+    "email": "abhijit@getpostman.com"
+  },
+  "homepage": "https://github.com/postmanlabs/har-validator",
   "license": "MIT",
   "main": "./src/index.js",
-  "bin": "./bin/har-validator",
+  "bin": {
+    "har-validator-fsless": "./bin/har-validator"
+  },
   "keywords": [
     "har",
     "http",
@@ -23,13 +28,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmadnassri/har-validator"
+    "url": "git+https://github.com/postmanlabs/har-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/ahmadnassri/har-validator/issues"
+    "url": "https://github.com/postmanlabs/har-validator/issues"
   },
   "scripts": {
-    "test": "standard && mocha --reporter spec",
+    "test": "mocha --reporter spec",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "codeclimate": "codeclimate < coverage/lcov.info"
   },
@@ -37,7 +42,6 @@
     "codeclimate-test-reporter": "0.0.4",
     "istanbul": "^0.3.11",
     "mocha": "^2.2.1",
-    "require-directory": "^2.1.0",
     "should": "^5.2.0",
     "standard": "^3.3.0"
   },
