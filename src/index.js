@@ -2,7 +2,7 @@
 
 var schemas = require('./schemas')
 var ValidationError = require('./error')
-var validator = require('is-my-json-valid')
+var validator = require('@postman/is-my-json-valid')
 
 var runner = function (schema, data, cb) {
   var validate = validator(schema, {
