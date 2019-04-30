@@ -39,7 +39,7 @@
     "codeclimate": "codeclimate < coverage/lcov.info"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "0.0.4",
+    "codeclimate-test-reporter": "0.5.1",
     "istanbul": "^0.3.11",
     "mocha": "^2.2.1",
     "should": "^5.2.0",
