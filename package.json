@@ -36,7 +36,9 @@
   "scripts": {
     "test": "mocha --reporter spec",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
-    "codeclimate": "codeclimate < coverage/lcov.info"
+    "codeclimate": "codeclimate < coverage/lcov.info",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "0.0.4",
@@ -49,6 +51,8 @@
     "bluebird": "^2.9.21",
     "chalk": "^1.0.0",
     "commander": "^2.7.1",
-    "@postman/is-my-json-valid": "2.18.0"
-  }
+    "@postman/is-my-json-valid": "2.18.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
